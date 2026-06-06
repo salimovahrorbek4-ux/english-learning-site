@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Mastery — B1 & B2 Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <span class="logo-icon">📚</span> English Mastery
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')" class="active" data-page="home">Bosh sahifa</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Darsliklar ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPage('lessons-b1')">B1 Darsliklar</a></li>
+                        <li><a href="#" onclick="showPage('lessons-b2')">B2 Darsliklar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Mashg'ulotlar ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPage('practice-b1')">B1 Mashg'ulotlar</a></li>
+                        <li><a href="#" onclick="showPage('practice-b2')">B2 Mashg'ulotlar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Testlar ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showPage('test-b1')">B1 Test</a></li>
+                        <li><a href="#" onclick="showPage('test-b2')">B2 Test</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="mainContent">
+        <!-- HOME PAGE -->
+        <section id="page-home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Ingliz tilini <span class="highlight">professional</span> darajada o'rganing</h1>
+                    <p class="hero-subtitle">B1 va B2 darajalari uchun grammatika darsliklari, interaktiv mashg'ulotlar va bilimingizni sinash uchun testlar</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="showPage('lessons-b1')">B1 dan boshlash</button>
+                        <button class="btn btn-outline btn-lg" onclick="showPage('lessons-b2')">B2 ga o'tish</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><span class="stat-number">20+</span><span class="stat-label">Darsliklar</span></div>
+                        <div class="stat"><span class="stat-number">100+</span><span class="stat-label">Mashqlar</span></div>
+                        <div class="stat"><span class="stat-number">200+</span><span class="stat-label">Test savollari</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2>Darajangizni tanlang</h2>
+                    <p>Qaysi daraja siz uchun mos?</p>
+                </div>
+                <div class="level-cards">
+                    <div class="level-card b1">
+                        <div class="level-badge">B1</div>
+                        <h3>Intermediate</h3>
+                        <p>O'rta daraja — kundalik mavzular haqida erkin suhbatlashish, asosiy grammatika tuzilmalarini mustahkamlash</p>
+                        <ul class="level-features">
+                            <li>Present Perfect & Past Simple</li>
+                            <li>Conditional sentences (0, 1, 2)</li>
+                            <li>Passive Voice asoslari</li>
+                            <li>Relative Clauses</li>
+                            <li>Modal verbs</li>
+                            <li>Reported Speech asoslari</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="showPage('lessons-b1')">B1 Darsliklarni ko'rish</button>
+                    </div>
+                    <div class="level-card b2">
+                        <div class="level-badge">B2</div>
+                        <h3>Upper-Intermediate</h3>
+                        <p>Yuqori o'rta daraja — murakkab mavzularda fikr bildirish, ilg'or grammatika tuzilmalarini o'zlashtirish</p>
+                        <ul class="level-features">
+                            <li>Mixed Conditionals</li>
+                            <li>Advanced Passive structures</li>
+                            <li>Inversion</li>
+                            <li>Cleft sentences</li>
+                            <li>Advanced Reported Speech</li>
+                            <li>Subjunctive mood</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="showPage('lessons-b2')">B2 Darsliklarni ko'rish</button>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top:60px">
+                    <h2>Qanday ishlaydi?</h2>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Darslikni o'qing</h3>
+                        <p>Har bir mavzu bo'yicha batafsil tushuntirish, qoidalar va misollar bilan tanishing</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Mashq qiling</h3>
+                        <p>Interaktiv mashg'ulotlar orqali bilimingizni mustahkamlang</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Testdan o'ting</h3>
+                        <p>Bilimingizni test orqali sinab ko'ring va natijangizni bilib oling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- B1 LESSONS PAGE -->
+        <section id="page-lessons-b1" class="page">
+            <div class="page-header b1-header">
+                <div class="container">
+                    <span class="page-badge">B1 — Intermediate</span>
+                    <h1>B1 Grammatika Darsliklari</h1>
+                    <p>O'rta daraja grammatikasini o'rganing va mustahkamlang</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="lessons-grid" id="b1-lessons-grid">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- B2 LESSONS PAGE -->
+        <section id="page-lessons-b2" class="page">
+            <div class="page-header b2-header">
+                <div class="container">
+                    <span class="page-badge">B2 — Upper-Intermediate</span>
+                    <h1>B2 Grammatika Darsliklari</h1>
+                    <p>Ilg'or grammatikani o'rganing va professional darajaga chiqing</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="lessons-grid" id="b2-lessons-grid">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- LESSON DETAIL PAGE -->
+        <section id="page-lesson-detail" class="page">
+            <div class="container">
+                <button class="btn btn-outline btn-back" id="lessonBackBtn" onclick="goBackFromLesson()">← Orqaga</button>
+                <div class="lesson-detail-content" id="lessonDetailContent">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- B1 PRACTICE PAGE -->
+        <section id="page-practice-b1" class="page">
+            <div class="page-header b1-header">
+                <div class="container">
+                    <span class="page-badge">B1 — Intermediate</span>
+                    <h1>B1 Mashg'ulotlar</h1>
+                    <p>Interaktiv mashqlar orqali bilimingizni mustahkamlang</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="practice-container" id="b1-practice-container">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- B2 PRACTICE PAGE -->
+        <section id="page-practice-b2" class="page">
+            <div class="page-header b2-header">
+                <div class="container">
+                    <span class="page-badge">B2 — Upper-Intermediate</span>
+                    <h1>B2 Mashg'ulotlar</h1>
+                    <p>Ilg'or grammatika mashqlari bilan professional darajaga chiqing</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="practice-container" id="b2-practice-container">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- B1 TEST PAGE -->
+        <section id="page-test-b1" class="page">
+            <div class="page-header b1-header">
+                <div class="container">
+                    <span class="page-badge">B1 — Intermediate</span>
+                    <h1>B1 Daraja Testi</h1>
+                    <p>B1 darajadagi bilimingizni sinab ko'ring — 20 ta savol</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="test-container" id="b1-test-container">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- B2 TEST PAGE -->
+        <section id="page-test-b2" class="page">
+            <div class="page-header b2-header">
+                <div class="container">
+                    <span class="page-badge">B2 — Upper-Intermediate</span>
+                    <h1>B2 Daraja Testi</h1>
+                    <p>B2 darajadagi bilimingizni sinab ko'ring — 20 ta savol</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="test-container" id="b2-test-container">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><span class="logo-icon">📚</span> English Mastery</h4>
+                    <p>Ingliz tilini B1 va B2 darajasida o'rganish uchun bepul platforma</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Darsliklar</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('lessons-b1')">B1 Darsliklar</a></li>
+                        <li><a href="#" onclick="showPage('lessons-b2')">B2 Darsliklar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Mashg'ulotlar</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('practice-b1')">B1 Mashg'ulotlar</a></li>
+                        <li><a href="#" onclick="showPage('practice-b2')">B2 Mashg'ulotlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Testlar</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('test-b1')">B1 Test</a></li>
+                        <li><a href="#" onclick="showPage('test-b2')">B2 Test</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 English Mastery. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
